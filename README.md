@@ -1,1 +1,1 @@
-"# codo23028g16 Vanesa Brice�o y Miguel Pieszko" 
+"Codo a Codo comisión 23028 grupo 16 Vanesa Briceño y Miguel Pieszko" 
