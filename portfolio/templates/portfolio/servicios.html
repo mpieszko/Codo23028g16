@@ -74,10 +74,11 @@
 
 
 			<!-- CTA -->
+			
 			<section id="cta" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>ALGUNOS TRABAJOS REALIZADOS</h2>
+						<h2>ALGUNOS TRABAJOS REALIZADOS:</h2>
 					
 					</header>
 				</div>
@@ -86,7 +87,25 @@
 			<!-- Posts PROYECTOS REALIZADOS-->
 			<section class="wrapper style1">
 				<div class="container">
-					<div class="row">
+					{% for project in projects %}
+						<!-- Proyecto -->
+
+						<div class="post"> 
+							<div >
+								<h2 class="section-heading title"> {{project.title}}</h2> 
+								<img class="img-fluid" src="{{project.image.url}}" alt="">
+							</div>
+						  	<div >
+								  
+								<p>{{project.description}}</p>
+								{% if project.link %}
+									<p><a href=" {{project.link}}" target="_blank">Más información</a></p>
+								{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+					
+					{% comment %} <div class="row">
 						<section class="col-6 col-12-narrower">
 							<div class="box post">
 								<a href="#" class="image left"><img src="https://herosu.com.mx/wp-content/uploads/2019/07/KUKA-SIEMENS.jpg" alt="" /></a>
@@ -139,7 +158,7 @@
 								</div>
 							</div>
 						</section>
-					</div>
+					</div> {% endcomment %}
 				</div>
 			</section>
 {% endblock content %}
