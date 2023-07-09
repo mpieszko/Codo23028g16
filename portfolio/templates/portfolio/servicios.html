@@ -85,15 +85,17 @@
 			</section>
            
 			<!-- Posts PROYECTOS REALIZADOS-->
-			<section class="wrapper style1">
+			<section>
 				<div class="container">
 					{% for project in projects %}
 						<!-- Proyecto -->
 
-						<div class="post"> 
-							<div >
+						<div style="margin-bottom: 20px; border: 1px solid #1a0303"> 
+							<div>
 								<h2 class="section-heading title"> {{project.title}}</h2> 
-								<img class="img-fluid" src="{{project.image.url}}" alt="">
+								<div class="imagen-prueba1">
+									<img class="img-fluid" src="{{project.image.url}}" width="90%" height="90%" alt="">
+								</div>
 							</div>
 						  	<div >
 								  
@@ -105,60 +107,7 @@
 						</div>
 					{% endfor %}
 					
-					{% comment %} <div class="row">
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"><img src="https://herosu.com.mx/wp-content/uploads/2019/07/KUKA-SIEMENS.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Instalación de procesos de pintura robotizados</h3>
-								</div>
-							</div>
-						</section>
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzGOPhxt9d5FwIzFXlqhh_W8oE8In9_mUPg&usqp=CAU" alt="" /></a>
-								<div class="inner">
-									<h3>Instalación de sistemas de soldadura por ultrasonido</h3>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="row">
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdVtXIH5Y85_z0w9qyp79hPPe23vYfCgRdOMU3OROBI3Z0mN3pnTN2wt9U6ymF-PZZOSg&usqp=CAU" alt="" /></a>
-								<div class="inner">
-									<h3>Instalación de sistemas de visión para inspección de calidad Poka Yoku</h3>
-								</div>
-							</div>
-						</section>
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"><img src="https://4.bp.blogspot.com/-QfMoCf7keH0/WNvvzv1zqeI/AAAAAAAABBs/cTR8zD2fV-QZazP-Rw1bSTXBC2-X2NgZACLcB/s750/Automatizacion.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Instalación de sistemas de paletizado y encajonado</h3>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="row">
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"><img src="https://automatizacionindustrial360.com/wp-content/uploads/2020/05/Principales-sistemas-de-automatizaci%C3%B3n-industrial.jpg" alt="" /></a>
-								<div class="inner">
-									<h3>Tableros de control industrial</h3>
-								</div>
-							</div>
-						</section>
-						<section class="col-6 col-12-narrower">
-							<div class="box post">
-								<a href="#" class="image left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLOXY4DybxDP5MCHjmInm-mibcCk-49VxYDA&usqp=CAU" alt="" /></a>
-								<div class="inner">
-									<h3>Instalación de línea de llenado y control de peso</h3>
-								</div>
-							</div>
-						</section>
-					</div> {% endcomment %}
+
 				</div>
 			</section>
 {% endblock content %}
